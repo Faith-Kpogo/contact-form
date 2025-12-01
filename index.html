@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+    <title>Frontend Mentor | Contact form</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <form action="" class="contact">
+        <h1>Contact Us</h1>
+        <div class="container">
+          <div class="names">
+            <div>
+              <label for="firstname">First Name</label>
+              <input type="text" id="firstname" />
+              <p class="error">This field is required</p>
+            </div>
+
+            <div>
+              <label for="lastname">Last Name</label>
+              <input type="text" id="lastname" />
+              <p class="error">This field is required</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="email">
+          <label for="email">Email</label>
+          <input type="text" id="email" />
+          <p class="error">Please enter a valid email address</p>
+        </div>
+
+        <fieldset>
+          <legend>Query Type</legend>
+          <div class="radio-container">
+            <div class="radio-type">
+              <div class="radio">
+                <input type="radio" id="general-enquiry" name="query-type" value="general" />
+                <label for="general-enquiry">General Enquiry</label>
+              </div>
+
+              <div class="radio">
+                <input type="radio" id="support-request" name="query-type" value="support" />
+                <label for="support-request">Support Request</label>
+              </div>
+            </div>
+            <p class="error">Please select a query type</p>
+          </div>
+        </fieldset>
+
+        <div class="text-area">
+          <label for="message">Message</label>
+          <textarea name="message" rows="5"></textarea>
+          <p class="error">This field is required</p>
+        </div>
+
+        <div class="check">
+          <div class="checkbox">
+            <input type="checkbox" id="consent" name="consent" />
+            <label for="consent">I consent to being contacted by the team *</label>
+          </div>
+          <p class="error">To submit this form, please consent to being contacted</p>
+        </div>
+
+        <button>Submit</button>
+      </form>
+    </main>
+  </body>
+
+  <script src="script.js"></script>
+</html>
