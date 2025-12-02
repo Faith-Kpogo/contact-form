@@ -18,16 +18,15 @@ input {
 body {
   background-color: hsl(148, 38%, 91%);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px 0;
   font-size: 14px;
-  height: 100vh;
+  height: 100%;
   margin: 0;
+  min-height: 100vh;
 }
 .contact {
-  width: 100%;
   max-width: 600px;
   padding: 1rem 2rem;
   background: white;
@@ -50,6 +49,7 @@ body {
   flex-direction: column;
   gap: 10px;
   width: 50%;
+  width: 300px;
 }
 .email {
   display: flex;
@@ -183,6 +183,9 @@ input[type="checkbox"]:focus {
   .contact{
     padding: 20px;
   }
+  .names div {
+  width: 200px;
+}
 }
 @media (max-width:550px) {
   .contact{

@@ -1,6 +1,5 @@
 const form = document.querySelector(".contact");
 
-// Define your validation functions FIRST (outside event listener)
 function validateFirstName(firstname) {
   return firstname.trim() !== "";
 }
@@ -36,11 +35,9 @@ function hideError(input, errorElement) {
   input.style.borderColor = "hsl(186, 15%, 59%)";
 }
 
-// NOW the event listener
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  // Get values
   const firstName = document.getElementById("firstname").value;
   const lastName = document.getElementById("lastname").value;
   const email = document.getElementById("email").value;
